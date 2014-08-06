@@ -17,3 +17,14 @@ exports['create element by tag'] = function (test) {
     test.equal(typeof element, 'object');
     test.ok(element !== $("<div>"));
 }
+
+exports['get tag name'] = function (test) {
+    var element = $("<div>");
+    test.equal(element.prop('tagName'), 'DIV');
+}
+
+exports['get closed tag name'] = function (test) {
+    var element = $("<div/>");
+    test.equal(element.prop('tagName'), 'DIV');
+}
+
