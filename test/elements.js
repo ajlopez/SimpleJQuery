@@ -42,3 +42,11 @@ exports['html'] = function (test) {
     element.html("My Header");
     test.equal(element.html(), "My Header");
 }
+
+exports['empty'] = function (test) {
+    var element = $("<h1>");
+    element.html("My Header");
+    element.empty();
+    test.equal(element.html(), "");
+}
+
