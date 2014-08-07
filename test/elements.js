@@ -37,3 +37,8 @@ exports['is visible, show, hide'] = function (test) {
     test.ok(element.$.visible());
 }
 
+exports['html'] = function (test) {
+    var element = $("<h1>");
+    element.html("My Header");
+    test.equal(element.html(), "My Header");
+}
