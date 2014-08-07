@@ -28,3 +28,12 @@ exports['get closed tag name'] = function (test) {
     test.equal(element.prop('tagName'), 'DIV');
 }
 
+exports['is visible, show, hide'] = function (test) {
+    var element = $("<div/>");
+    test.ok(element.$.visible());
+    element.hide();
+    test.ok(!element.$.visible());
+    element.show();
+    test.ok(element.$.visible());
+}
+
