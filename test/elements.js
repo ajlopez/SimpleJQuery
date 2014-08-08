@@ -42,3 +42,10 @@ exports['html'] = function (test) {
     element.html("My Header");
     test.equal(element.html(), "My Header");
 }
+
+exports['attr'] = function (test) {
+    var element = $("<div>");
+    test.equal(element.attr('name'), null);
+    element.attr('name','mydiv');
+    test.equal(element.attr('name'), 'mydiv');
+}
