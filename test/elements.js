@@ -77,3 +77,7 @@ exports['outer html with attribute'] = function (test) {
     test.equal($("<div>").html("Hello, world").attr("name","mydiv").$.outerHtml(), "<div name='mydiv'>Hello, world</div>");
 }
 
+exports['attribute id'] = function (test) {
+    var element = $("<div>").attr("id", "mydiv");
+    test.strictEqual(element, $("#mydiv"));
+}
