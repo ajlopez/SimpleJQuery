@@ -72,3 +72,8 @@ exports['attr'] = function (test) {
 exports['outer html of empty element'] = function (test) {
     test.equal($("<div>").$.outerHtml(), "<div />");
 }
+
+exports['outer html with attribute'] = function (test) {
+    test.equal($("<div>").html("Hello, world").attr("name","mydiv").$.outerHtml(), "<div name='mydiv'>Hello, world</div>");
+}
+
