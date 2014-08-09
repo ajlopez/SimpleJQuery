@@ -50,3 +50,9 @@ exports['empty'] = function (test) {
     test.equal(element.html(), "");
 }
 
+exports['attr'] = function (test) {
+    var element = $("<div>");
+    test.equal(element.attr('name'), null);
+    element.attr('name','mydiv');
+    test.equal(element.attr('name'), 'mydiv');
+}
