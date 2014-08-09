@@ -23,6 +23,11 @@ exports['get tag name'] = function (test) {
     test.equal(element.prop('tagName'), 'DIV');
 }
 
+exports['get tag name with digit'] = function (test) {
+    var element = $("<h1>");
+    test.equal(element.prop('tagName'), 'H1');
+}
+
 exports['get closed tag name'] = function (test) {
     var element = $("<div/>");
     test.equal(element.prop('tagName'), 'DIV');
@@ -41,6 +46,13 @@ exports['html'] = function (test) {
     var element = $("<h1>");
     element.html("My Header");
     test.equal(element.html(), "My Header");
+}
+
+exports['append children and html'] = function (test) {
+    var element = $("<div>");
+    element.append($("<p>").html("Hello"));
+    element.append($("<p>").html("World"));
+    test.equal(element.html(), "<p>Hello</p><p>World</p>");
 }
 
 exports['empty'] = function (test) {
