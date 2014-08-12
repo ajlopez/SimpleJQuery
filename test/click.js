@@ -9,5 +9,5 @@ exports['click function'] = function (test) {
         test.done();
     }).html("hello");
     
-    element.$.doClick();
+    element.click();
 };
