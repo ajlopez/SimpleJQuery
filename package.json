@@ -9,9 +9,6 @@
 , "scripts": {
     "test": "simpleunit ./test"
   }
-, "bin": {
-    "simplejquery": "./bin/simplejquery"
-  }
 , "dependencies": {
   }
 , "devDependencies": {
