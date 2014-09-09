@@ -1,7 +1,7 @@
 { "name": "simplejquery"
 , "description": "Simple jQuery mock to be used in console tests, WIP"
 , "keywords": [ "jquery", "mock", "testing", "nodejs" ]
-, "version": "0.0.1alpha"
+, "version": "0.0.1"
 , "author": "Angel 'Java' Lopez <webmaster@ajlopez.com> (http://www.ajlopez.com)"
 , "repository": { "type": "git", "url": "git://github.com/ajlopez/SimpleJQuery.git" }
 , "main": "./lib/simplejquery.js"
